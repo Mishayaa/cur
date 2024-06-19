@@ -1,0 +1,11 @@
+<div class="w-full flex flex-col gap-3 justify-center items-center">
+  <div class="container flex items-stretch">
+    <app-slider class="w-full"></app-slider>
+  </div>
+  <div class="main-wrapper mb-2">
+    @for (item of news; track news) {
+      <app-news-card [news]="item"></app-news-card>
+    }
+  </div>
+</div>
+

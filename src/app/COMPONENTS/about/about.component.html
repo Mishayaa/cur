@@ -1,0 +1,8 @@
+<div class="container">
+  <h1 [ngStyle]="{textAlign: 'center'}">Портал актуальних новин політехніки"</h1>
+  <div class="wrapper">
+    @for (p of points; let i=$index; track points) {
+      <p class="content">{{i + 1}}) {{p}}</p>
+    }
+  </div>
+</div>

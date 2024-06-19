@@ -1,0 +1,13 @@
+
+
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, max(300px));
+  place-items: center;
+  place-content: center;
+  place-self: center;
+  gap: 16px;
+  width: 100%;
+}
+

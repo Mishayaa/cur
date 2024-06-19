@@ -1,0 +1,14 @@
+<div class="container">
+  <div>
+    <h2>Новини</h2>
+    <div>
+      <mat-form-field appearance="outline"><input type="text" matInput #input></mat-form-field>
+      <button (click)="search(input.value)" mat-button>Пошук</button>
+    </div>
+  </div>
+  <div class="results">
+    @for (item of filtered; track filtered) {
+      <app-news-card [news]="item"></app-news-card>
+    }
+  </div>
+</div>

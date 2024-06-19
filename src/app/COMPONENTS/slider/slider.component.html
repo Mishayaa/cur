@@ -1,0 +1,9 @@
+<div class="w-full flex justify-around items-center">
+  <mat-icon (click)="changeNews('+')">arrow_back</mat-icon>
+  <div class="h-[200px] box-border">
+    <img class="w-full" height="200" [src]="images[indexSignal()]" alt="">
+  </div>
+  <mat-icon class="rotate-180" (click)="changeNews('-')">arrow_back</mat-icon>
+</div>
+
+

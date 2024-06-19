@@ -1,0 +1,28 @@
+<header>
+  <div class="container flex flex-row justify-between items-center">
+    <div class="wrapper" routerLink="/">
+      <div class="logo-wrapper">
+        <img src="../../../assets/—Pngtree—scales%20of%20justice%20icon%20simple_5161552.png" alt="logo">
+      </div>
+      <p>Новини політехніки</p></div>
+    <div class="menu-wrapper">
+      <ng-container *ngTemplateOutlet="navMenu"></ng-container>
+    </div>
+
+    <div class="menu">
+      <button mat-button [matMenuTriggerFor]="menu" matRipple  mat-raised-button>Menu</button>
+      <mat-menu #menu="matMenu">
+        <ng-container *ngTemplateOutlet="navMenu"></ng-container>
+      </mat-menu>
+    </div>
+  </div>
+</header>
+
+<ng-template #navMenu>
+  <nav class="nav-menu">
+    <button mat-raised-button routerLink="about">Про сайт</button>
+    <button mat-raised-button routerLink="gallery">Галерея</button>
+    <button mat-raised-button routerLink="news">Новини</button>
+    <button mat-raised-button routerLink="contacts">Контакти</button>
+  </nav>
+</ng-template>
